@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -123,10 +123,10 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q      &kp W         &kp E     &kp R    &kp T                      &kp Y          &kp U  &lt 5 I         &kp O                &kp P
-&lt 4 A           &kp S         &kp D     &kp F    &kp G                      &kp H          &kp J  &kp K           &kp L                &kp MINUS
-&lt 7 Z           &kp X         &kp C     &kp V    &kp B                      &kp N          &kp M  &kp COMMA       &mt UP_ARROW PERIOD  &mt RIGHT_SHIFT QUESTION
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCMD  &kp INS  &to 2  &to 3    &kp SPACE  &kp BACKSPACE         &kp LEFT_ARROW  &kp DOWN_ARROW       &lt 6 RIGHT
+&mt ESCAPE Q      &kp W         &kp E     &kp R    &kp T                                    &kp Y          &kp U  &lt 5 I         &kp O                &kp P
+&lt 4 A           &kp S         &kp D     &kp F    &kp G                                    &kp H          &kp J  &kp K           &kp L                &kp MINUS
+&lt 7 Z           &kp X         &kp C     &kp V    &kp B                                    &kp N          &kp M  &kp COMMA       &mt UP_ARROW PERIOD  &mt RIGHT_SHIFT QUESTION
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCMD  &kp INS  &lt 2 AT_SIGN  &lt 3 SPACE    &kp SPACE  &kp BACKSPACE         &kp LEFT_ARROW  &kp DOWN_ARROW       &lt 6 RIGHT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
