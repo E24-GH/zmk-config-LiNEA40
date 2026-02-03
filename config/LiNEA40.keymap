@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,
+            //スクロール方向を逆転,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -124,7 +124,7 @@
         default_layer {
             bindings = <
 &mt ESCAPE Q      &kp W         &kp E     &kp R    &kp T                                    &kp Y          &kp U  &lt 5 I         &kp O                &kp P
-&lt 4 A           &kp S         &kp D     &kp F    &kp G                                    &kp H          &kp J  &kp K           &kp L                &kp MINUS
+&kp A             &kp S         &kp D     &kp F    &kp G                                    &kp H          &kp J  &kp K           &kp L                &kp ENTER
 &lt 7 Z           &kp X         &kp C     &kp V    &kp B                                    &kp N          &kp M  &kp COMMA       &mt UP_ARROW PERIOD  &mt RIGHT_SHIFT QUESTION
 &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCMD  &kp INS  &lt 2 AT_SIGN  &lt 3 SPACE    &kp SPACE  &kp BACKSPACE         &kp LEFT_ARROW  &kp DOWN_ARROW       &lt 6 RIGHT
             >;
@@ -160,10 +160,10 @@
 
         CURSOR {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                       &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                       &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans                  &trans        &trans                   &trans  &trans    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
+&kp F1    &kp F2         &kp F3   &kp F4       &kp F5                        &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+&kp F6    &kp F7         &kp F8   &kp F9       &kp F10                       &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
+&kp HOME  &kp PAGE_DOWN  &kp END  &kp PAGE_UP  &trans                        &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&trans    &trans         &trans   &trans       &trans   &trans    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
             >;
         };
 
